@@ -1,97 +1,89 @@
 .insomnia {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 45px;
+	padding: 60px 15px 45px 15px;
 
-    @media  screen and (min-width: 768px) {
-        padding-left: 39px;
-        padding-right: 39px;
-        padding-top: 37px;
-        padding-bottom: 60px;  
-    }
+	@media screen and (min-width: 768px) {
+		padding: 37px 39px 60px 39px;
+	}
 
-    @media  screen and (min-width: 1280px) {
-        padding-left: 275px;
-        padding-right: 275px;
-        padding-top: 65px;
-    }
+	@media screen and (min-width: 1280px) {
+		padding-left: 275px;
+		padding-right: 275px;
+		padding-top: 65px;
+	}
 
-    &_title {
-        color: $lightblue-color;
-        font-size: 14px;
-        padding-bottom: 10px;
+	&_title {
+		color: $lightblue-color;
+		font-size: 14px;
+		padding-bottom: 10px;
 
-        @media  screen and (min-width: 1280px) {
-            font-size: 16px;
-            padding-bottom: 15px;
-        }
-    }
+		@media screen and (min-width: 1280px) {
+			font-size: 16px;
+			padding-bottom: 15px;
+		}
+	}
 
-    &_article {
-        padding-bottom: 20px;
+	&_article {
+		padding-bottom: 20px;
 
-        &-title {
-            font-family: $title-font;
-            font-size: 24px;
-            line-height: 2rem;
-            font-weight: bold;
-            padding-bottom: 15px;
-            
-            @media  screen and (min-width: 768px) {
-                font-size: 26px;
-                padding-bottom: 25px;
-            }
+		&-title {
+			font-family: $title-font;
+			font-size: 24px;
+			line-height: 2rem;
+			font-weight: bold;
+			padding-bottom: 15px;
 
-            @media  screen and (min-width: 1280px) {
-                font-size: 32px;
-                padding-bottom: 40px;
-            }
-        }
+			@media screen and (min-width: 768px) {
+				font-size: 26px;
+				padding-bottom: 25px;
+			}
 
-        &-text {
-            font-size: 18px;
-            line-height: 2rem;
-            padding-bottom: 20px;
+			@media screen and (min-width: 1280px) {
+				font-size: 32px;
+				padding-bottom: 40px;
+			}
+		}
 
-            @media  screen and (min-width: 768px) {
-                font-size: 20px;
-            }
-        }
-    }
+		&-text {
+			font-size: 18px;
+			line-height: 2rem;
+			padding-bottom: 20px;
 
-    &_link {
-        
-        border: 3px solid $orange-color;
-        width: 76px;
-        height: 45px;
-        border-radius: 22.5px;
-        // Flexbox
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-        
-        &-go {
-            text-decoration: none;
-            color: $orange-color;
-            font-size: 20px;
-            font-weight: 500;
-        }
+			@media screen and (min-width: 768px) {
+				font-size: 20px;
+			}
+		}
+	}
 
-        @media  screen and (min-width: 768px) {
-            width: 91px;
-        }
+	&_link {
+		border: 3px solid $orange-color;
+		width: 76px;
+		height: 45px;
+		border-radius: 22.5px;
+		// Flexbox
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-content: center;
 
-        @media  screen and (min-width: 1280px) {
-            width: 160px;
-        }
-    }
+		&-go {
+			text-decoration: none;
+			color: $orange-color;
+			font-size: 20px;
+			font-weight: 500;
+		}
 
-    &_link:hover {
-        transform: perspective(1000px) rotateX(360deg);
-        transition: transform 1s ease 0s;
-    }
-    
+		@media screen and (min-width: 768px) {
+			width: 91px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			width: 160px;
+		}
+	}
+
+	&_link:hover {
+		transform: perspective(1000px) rotateX(360deg);
+		transition: transform 1s ease 0s;
+	}
 }
